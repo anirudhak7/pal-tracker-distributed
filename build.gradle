@@ -3,8 +3,12 @@ import io.pivotal.pal.tracker.gradlebuild.DependenciesGraphPlugin
 buildscript {
     ext {
         springBootVersion = "1.5.7.RELEASE"
-        springVersion = "4.3.8.RELEASE"
+        springVersion = "4.3.11.RELEASE"
         mysqlVersion = "6.0.6"
+        springCloudVersion = "Dalston.SR1"
+        springCloudServicesClientLibrariesVersion = "Dalston.SR1"
+        springCloudServicesVersion = "Dalston.SR1"
+        springCloudCommonsVersion ="1.2.2.RELEASE"
     }
 
     repositories {
@@ -40,6 +44,6 @@ subprojects {
         testCompile "junit:junit:4.12"
         testCompile "org.mockito:mockito-core:2.2.26"
         testCompile "org.assertj:assertj-core:3.8.0"
-        
+
     }
 }
